@@ -27,7 +27,8 @@ footer {
 a {
     color: white;
     text-decoration: none; 
-    margin: 0px 10px 0px 0px 
+    margin: 0px 10px 0px 0px;
+    transition: all .5s;
 }
 
 a:hover {
