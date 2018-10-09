@@ -54,3 +54,16 @@ section.katrijn-1 {
 section.katrijn-4 {
     background-image: url(katrijn.4.jpg);
 }
+
+@media (max-width: 600px) {
+    header {
+        top: 10px;
+    }
+    footer {
+        bottom: 10px;
+        left: 10px;
+    }
+    section {
+        background-attachment: scroll;
+    }
+}
