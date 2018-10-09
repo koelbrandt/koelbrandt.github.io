@@ -8,7 +8,7 @@ body{
 }
 
 header {
-    position: relative;
+    position: fixed;
     top: 20px;
     left: 20px;
 }
@@ -19,7 +19,7 @@ h1 {
 }
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 30px;
     right: 20px;
 }
@@ -33,4 +33,24 @@ a {
 
 a:hover {
     color: darkorange; 
+}
+
+section {
+    height: 100vh;
+    background-color: hotpink;
+    background-image: url(katrijn.5.jpg);
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+section.katrijn-6 {
+    background-image: url(katrijn.6.jpg);
+}
+
+section.katrijn-1 {
+    background-image: url(katrijn.1.jpeg);
+}
+
+section.katrijn-4 {
+    background-image: url(katrijn.4.jpg);
 }
