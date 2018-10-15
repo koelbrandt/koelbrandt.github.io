@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+body {
+    font-family: 'Lora';
+    font-size: 18px;
+    line-height: 1.5;
+    
+    width: 640px;
+    margin: 40px auto;
+}
+
+nav {
+    background-color: #f05d5d;
+    padding: 20px 40px 20px 40px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0px 15px 0px 0px;
+    border-bottom: 2px solid #f05d5d;
+}
+
+nav a:hover {
+    color: #5000ff;
+    border-bottom: 2px solid #ffffff;
+}
