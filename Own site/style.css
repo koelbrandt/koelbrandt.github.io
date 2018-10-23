@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    line-height: 1.1;
+    color: #ffffff; 
+    text-align: left;
+    background-color: rgb(213,62,17)
+}
+
+header img {
+    width: 100%;
+}
+
+header nav {
+    text-align: center;
+    text-decoration: none; 
+}
+
+header nav a {
+    background-image: ???
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px;
+    margin: 0 0 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+section.date h1 {
+    padding: 50px 0px 50px 150px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 50%
+}
+
+section.date p{
+    font-size: 10;
+    line-height: 1.1;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+    width: 50%
+}
+
+section.picturegirl img{
+    padding: 20px 0px 20px 50px;
+    width: 50%;
+    float: left;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+section.picturetree img {
+    padding: 20px 0px 20px 20px;
+    width: 50%;
+    float: right;
+    max-width: px;
+    margin: 0 auto;
+}
+
+section.line-up h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 20px 0px 20px 50px;  
+}
+
+section.line-up p{
+    padding: 0px 0px 20px 50px;
+}
+
+section.location h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 0px 0px 50px;
+}
+
+section.location p{
+    width: 50%;
+    padding: 20px 0px 0px 50px;
+}
+
+section.location img{
+    width: 70%
+}
+
+footer {
+    background-color: #48353a;
+    overflow: hidden;
+    width: 100%;
+}
+
+footer p{
+    float: right;
+    color: lightgray;
+    font-style: italic;
+}
+
+footer img {
+    float: left;
+    width: 100%;
+}
