@@ -1,29 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=David+Libre:400,700');
-
-*{
+* {
     box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
 }
 
 body {
-    font-family: 'David Libre';
-    font-size: 18px;
+    font-family: Helvetica;
+    font-size: 24px;
     line-height: 1.5;
-    color: #48353a; 
-    text-align: center;
+    
+    background-color: #000000;
+    color: #ffffff;
 }
 
 header {
-    padding: 10px 20px 10px 20px;
     position: fixed;
-    width: 100%; 
     top: 0;
     left: 0;
-    background-color: rgba(255,255,255,.75)
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;   
 }
 
-header img {
+header h1 {
     float: left;
 }
 
@@ -32,115 +29,74 @@ header nav {
 }
 
 header nav a {
-    padding: 5px;
-    margin: 0 0 0 10px;
-    color: #48353a;
+    color: #ffffff;
     text-decoration: none;
+    margin-left: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
 }
 
 header nav a:hover {
-    border-bottom: 2px solid #48353a; 
+    border-bottom: 2px solid #ff00ff;
 }
 
-section.hero {
-    padding: 250px 0px 200px 0px;
+header nav a.selected {
+    border-bottom: 2px solid #666666;
 }
 
-section.hero h1{
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 1.2;
-    
-    max-width: 500px;
-    margin: 0 auto 20px auto;
+section {
+    text-align: center;
 }
 
-section.hero p{
-    max-width: 400px;
-    margin: 0 auto;
-}
-
-a.button {
+div {
+    width: 300px;
+    margin: 20px;
+    position: relative;
     display: inline-block;
-    margin: 20px 0 0 0;
-    border: 2px solid #eeae9f;
-    border-radius: 40px; 
-    padding: 10px 20px;
-    color: #eeae9f;
-    text-decoration: none;
-    font-weight: 700;
 }
 
-a.button:hover {
-    background-color: #eeae9f;
-    color: #ffffff; 
+div h2 {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 250px;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
-section.Flowers {
-    overflow: hidden;
+div:hover h2 {
+    opacity: 1;
 }
 
-section.Flowers img {
-    float: left;
-    width: 33.33%;
+div img {
+    opacity: 1;
+    transition: opacity 1s;
 }
 
-section.Quotes {
-    overflow: hidden;
-}
-
-section.Quotes div {
-    float: left;
-    width: 50%;
-    padding: 40px 120px 60px;
-}
-section.Quotes div.quote1 {
-    background-color: #f7f1ee;
-}
-
-section.Quotes img {
-    width: 75px;
-    border-radius: 50px;
-}
-
-section.Quotes h2 {
-    font-weight: 700;
-    font-size: 24px;
-    padding: 20px 0;
-}
-
-section.fullbleed img {
-    width: 100%;
-}
-
-section.brands {
-    background-color: #eeae9f;
-    color: #ffffff;
-    padding: 40px 0px;
-}
-
-section.brands h3 {
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-section.brands img {
-    margin: 0 10px 0 10px;
+div:hover img {
+    opacity: 0.5;
 }
 
 footer {
-    background-color: #48353a;
-    padding: 10px 20px 10px 20px;
-    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    left: 0;
     width: 100%;
+    padding: 20px;
+    overflow: hidden;
 }
 
-footer p{
+footer p {
+    float: left;
+}
+
+footer nav {
     float: right;
-    color: lightgray;
-    font-style: italic;
 }
 
 footer img {
-    float: left;
+    width: 24px;
 }
