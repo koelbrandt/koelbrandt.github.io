@@ -65,11 +65,12 @@ div h2 {
     line-height: 1.2;
     text-align: left;
     opacity: 0;
-    transition: opacity 1s;
+    transition: all 1s;
 }
 
 div:hover h2 {
     opacity: 1;
+    color: red;
 }
 
 div img {
@@ -80,6 +81,18 @@ div img {
 
 div:hover img {
     opacity: 0.5;
+}
+
+div.large {
+    width: 420px;
+}
+
+div.xlarge {
+    width: 600px;
+}
+
+div.small {
+    width: 250px;
 }
 
 footer {
