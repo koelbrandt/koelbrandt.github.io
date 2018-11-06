@@ -83,9 +83,8 @@ section.pictures {
     max-width: 900px;
     margin: auto;
     width: 100%;
-    position: absolute;
-    padding: 20px 0px 300px 20px;
-    
+    position: relative;
+    align-items: center;
 }
 
 
@@ -101,9 +100,9 @@ section.picturegirl {
 section.picturetree {
     padding: 20px 0px 20px 140px;
     width: 75%;
-    float: left;
     margin: 0 auto;
     position: absolute;
+    float: left;
 }
 
 .picturetree img, .picturegirl img {
