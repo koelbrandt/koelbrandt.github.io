@@ -26,6 +26,11 @@ header img {
     width: 100%;
 }
 
+section.title {
+    align-items: center;
+    text-align: center;
+}
+
 section.title img {
     max-width: 700px;
     padding: 30px 0px 0px 40px;
@@ -46,11 +51,17 @@ header nav a {
     margin: 0 0 0 10px; 
     color: #ffffff;
     text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+header nav a:hover {
+    border-bottom: 2px solid #ffffff;
 }
 
 .intro {
     max-width: 900px;
-    margin: auto;
+    margin: 20px auto;
     border: 5px solid #fff;
     overflow: auto;
     padding: 20px 40px;
@@ -69,63 +80,71 @@ header nav a {
 } 
 
 section.pictures {
+    max-width: 900px;
+    margin: auto;
     width: 100%;
     position: absolute;
     padding: 20px 0px 300px 20px;
     
 }
 
-section.picturegirl img{
+
+section.picturegirl {
     padding: 20px 0px 20px 50px;
-    width: 50%;
+    width: 25%;
     float: right;
     max-width: 300px;
     margin: 0 auto;
     position: absolute;
 }
 
-section.picturetree img {
+section.picturetree {
     padding: 20px 0px 20px 140px;
-    width: 100%;
+    width: 75%;
     float: left;
     margin: 0 auto;
     position: absolute;
 }
 
+.picturetree img, .picturegirl img {
+    height: 250px; 
+    object-fit: contain; 
+}
+
+
 section.line-up h1 {
     font-size: 30px;
     font-weight: 700;
     line-height: 1.5;
-    padding: 350px 0px 20px 50px; 
-    
+    padding: 350px 0px 0px 50px;   
 }
 
 section.line-up p{
     padding: 0px 0px 20px 50px;
+    font-size: 15px;
 }
 
 section.location h1{
     font-size: 30px;
     font-weight: 700;
-    padding: 20px 0px 0px 50px;
+    padding: 40px 0px 0px 50px;
     position: absolute;
 }
 
 section.location p{
     width: 50%;
-    padding: 70px 0px 0px 50px;
+    padding: 90px 0px 0px 50px;
     position: absolute;
+    font-size: 20px;
 }
 
 section.locationimage img{
-    width: 40%;
+    width: 45%;
+    max-width: 50%;
     float: right;
+    padding: 90px 20px 20px 0;
 }
 
-.picturetree img, .picturegirl img {
-    height: 300px; 
-    object-fit: contain; 
-}
 
 footer {
     background-color: #48353a;
