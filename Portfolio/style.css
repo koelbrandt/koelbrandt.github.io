@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 65%;    
+}
+
+body {
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    line-height: 1.3;
+    background-color: #000000;
+}
+
+
+div.wrap {
+    color: #ffffff;
+    max-width: 960px;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+    font-size: 30px;
+    font-weight: 700; 
+}
+
+section.hero {
+    color: #ffffff;
+    font-size: 10px;
+    max-width: 240px;
+    padding: 20px 20px 20px 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    float: left; 
+    margin: 5px;
+}
+
+section.smile {
+    text-align: center;
+    padding: 40px 0 100px 0;
+    
+}
+
+
+footer nav a {
+    color: white;
+    text-decoration: none; 
+    float: left; 
+    margin: 5px;
+}
+
+section.about {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    max-width: 100%;
+    
+}
+
+section.info {
+    padding: 10px 0 10px 40px;
+}
+
+section.info h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+section.info p {
+    color: #ffffff;
+    font-size: 13px;
+    max-width: 400px
+    
+}
+
+@media (max-width: 1000px) {
+    div.wrap {
+        width: 640px;
+    }
+}
+
+@media (max-width: 680px) {
+    div.wrap {
+        width: auto;
+        margin: 0 20px 0 20px;
+    }
+    div.products {
+        width: auto;
+    }
+    section.hero h2 {
+        font-size: 24px;
+    }
+    section.hero h3 {
+        font-size: 18px;
+    }
+}
