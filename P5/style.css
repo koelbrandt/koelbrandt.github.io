@@ -112,3 +112,25 @@ div.product img {
 div.product:hover img {
     opacity: .25;
 }
+
+@media (max-width: 1000px) {
+    div.wrap {
+        width: 640px;
+    }
+}
+
+@media (max-width: 680px) {
+    div.wrap {
+        width: auto;
+        margin: 0 20px 0 20px;
+    }
+    div.products {
+        width: auto;
+    }
+    section.hero h2 {
+        font-size: 24px;
+    }
+    section.hero h3 {
+        font-size: 18px;
+    }
+}
