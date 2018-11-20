@@ -54,27 +54,72 @@ footer nav a {
 section.about {
     color: white;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 50px;
     max-width: 100%;
     
 }
 
 section.info {
     padding: 10px 0 10px 40px;
+    background-color: white;
 }
 
 section.info h1 {
-    color: white;
+    color: black;
     font-size: 40px;
     font-weight: 700;
+    float: left;
 }
 
 section.info p {
-    color: #ffffff;
+    color: black;
     font-size: 13px;
-    max-width: 400px
+    max-width: 400px;
+    padding: 10px 0px 30px 50px;
+}
+
+.info {
+    padding: 20px 0px 30px 0px;
     
 }
+
+section.opdracht1 {
+    max-width: 500px;
+    position: relative;   
+}
+
+.frontrecord img{
+    float: left;
+    position: absolute;
+    margin: 0 auto;
+}
+
+.backrecord img{
+    float: right; 
+    position: relative; 
+}
+
+.frontrecord img, .backrecord img {
+    object-fit: contain; 
+}
+
+.fronteverything img{
+    position: relative;
+    padding: 20px 0 20px 0;
+    width: 100%;
+}
+
+section.opdracht2 {
+    max-width: 500px;
+    position: relative;   
+}
+
+section.opdracht3 {
+    max-width: 500px;
+    position: relative;   
+}
+
+
 
 @media (max-width: 1000px) {
     div.wrap {
