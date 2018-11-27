@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    font-size: 32px;
+    line-height: 1.2;
+    
+    background-color: #ffffff;
+    margin: 40px auto 40px auto;
+    width: 960px;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+header {
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+section {
+    overflow: hidden;
+    padding: 0 0 60px 0;
+}
+
+section.natural img {
+    float: left;
+    width: 700px;
+}
+
+section.natural h2 {
+    float: right;
+    width: 360px;
+    font-size: 64px;
+    font-weight: 700;
+    margin: 150px 0 0 -100px;
+}
+
+section.onething img {
+    float: right;
+    width: 600px;
+}
+
+section.onething div {
+    float: left;
+    width: 510px;
+    margin: 60px -150px 0 0;
+}
+
+section.onething h3 {
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+section.onething p {
+    margin: 0 0 10px 0;
+}
+
+section.lookbook {
+    background-image: url(image_3.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    height: 540px;
+    padding: 250px 0 0 0;
+    margin: 0 0 60px 0;
+    
+    text-align: center;
+    color: #ffffff;
+    font-size: 64px;
+    font-weight: 700;
+}
+
+section.collection img {
+    float: left;
+    width: 700px;   
+}
+
+section.collection div {
+    float: right;
+    width: 310px;
+    margin: 100px 0 0 -50px;
+    font-size: 48px; 
+    font-weight: 700;
+}
+
+section img {
+    position: relative;
+    z-index: -1;
+    transition: all 1s; 
+}
+
+section:hover img {
+    opacity: 0.75;
+    transform: scale(0.95) rotate(-3deg);
+}
+
+section.onething:hover img {
+    transform: scale(.99) rotate(3deg);
+}
+
+div.hamburger {
+    background-image: url(menu-icon.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+}
+
+div.slide-out {
+    position: fixed;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: pink;
+    left: -290px;
+    transition: left 1s;
+}
+
+div.hamburger:hover div.slide-out {
+    left: 0;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    left: 150px;
+    width: 200px;
+    transform: translateX(-50%) translateY(-50%);   
+}
+
+nav a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    margin: 10px 0;
+}
