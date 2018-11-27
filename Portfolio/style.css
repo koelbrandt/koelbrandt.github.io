@@ -95,8 +95,13 @@ section.opdracht1 {
 }
 
 .backrecord img{
-    float: right; 
-    position: relative; 
+    float: right;
+    transition: left 1s;
+}
+
+.backrecord:hover {
+    left: 0;
+    transform: translateX(50%) translateY(50%);
 }
 
 .frontrecord img, .backrecord img {
@@ -104,10 +109,29 @@ section.opdracht1 {
 }
 
 .fronteverything img{
-    position: relative;
+    position: absolute;
     padding: 20px 0 20px 0;
     width: 100%;
+    transition: bottom 1s;
+   
 }
+
+.fronteverything:hover {
+    bottom: 100;
+    transform: translateX(50%) translateY(50%);
+}
+
+.backeverything img {
+    float: left;
+    position: absolute;
+    
+}
+
+.backeverything:hover {
+    bottom: 1000;
+    transform: translateX(-50%) translateY(-50%); 
+}
+
 
 section.opdracht2 {
     max-width: 500px;
