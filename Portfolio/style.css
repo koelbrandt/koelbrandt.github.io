@@ -30,33 +30,43 @@ section.hero {
     padding: 20px 20px 20px 20px;
 }
 
-header nav a {
-    color: white;
-    text-decoration: none;
-    float: left; 
-    margin: 5px;
-}
 
 section.smile {
     text-align: center;
-    padding: 40px 0 100px 0;
-    
+    padding: 40px 0 100px 0;  
+    z-index: -1;
+    transition: all 1s;
 }
 
+section.smile:hover img {
+    transform: scale(.99) rotate(180deg);
+}
 
 footer nav a {
+    text-align: center;
     color: white;
     text-decoration: none; 
-    float: left; 
-    margin: 5px;
+    border-bottom: 2px solid transparent;
+    transition: opacity 0 .5s;
+    display: inline-block;  
+}
+
+footer nav a:hover {
+    border-bottom: 5px solid pink;
 }
 
 section.about {
     color: white;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 20px;
     max-width: 100%;
-    
+    z-index: -1;
+    transition: all 1s;   
+}
+
+section.about:hover {
+    opacity: 0;
+    transform: scale(.99) 
 }
 
 section.info {
@@ -97,6 +107,7 @@ section.opdracht1 {
 .backrecord img{
     float: right;
     transition: left 1s;
+    z-index: -1;
 }
 
 .backrecord:hover {
@@ -122,20 +133,38 @@ section.opdracht1 {
 }
 
 .backeverything img {
-    float: left;
+    float: bottom;
     position: absolute;
+    z-index: 1;
     
 }
 
 .backeverything:hover {
     bottom: 1000;
-    transform: translateX(-50%) translateY(-50%); 
+    transform: translateX(120%) translateY(120%); 
 }
 
 
 section.opdracht2 {
     max-width: 500px;
     position: relative;   
+}
+
+.parijsfront img {
+    float: left;
+    position: absolute;
+    margin: 0 auto; 
+}
+
+.parijsback img {
+    float: right;
+    transition: left 1s;
+    z-index: -1; 
+}
+
+.parijsback:hover img {
+    left: 0;
+    transform: translateX(50%) translateY(50%);
 }
 
 section.opdracht3 {
