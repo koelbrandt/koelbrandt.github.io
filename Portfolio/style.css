@@ -43,7 +43,10 @@ section.smile:hover img {
 }
 
 footer nav a {
+    font-size: 30px;
+    font-weight: 700;
     text-align: center;
+    padding: 0px 30px 0px 30px;
     color: white;
     text-decoration: none; 
     border-bottom: 2px solid transparent;
@@ -120,28 +123,10 @@ section.opdracht1 {
 }
 
 .fronteverything img{
-    position: absolute;
-    padding: 20px 0 20px 0;
+    padding: 10px 0 10px 0;
     width: 100%;
     transition: bottom 1s;
    
-}
-
-.fronteverything:hover {
-    bottom: 100;
-    transform: translateX(50%) translateY(50%);
-}
-
-.backeverything img {
-    float: bottom;
-    position: absolute;
-    z-index: 1;
-    
-}
-
-.backeverything:hover {
-    bottom: 1000;
-    transform: translateX(120%) translateY(120%); 
 }
 
 
@@ -162,17 +147,54 @@ section.opdracht2 {
     z-index: -1; 
 }
 
-.parijsback:hover img {
+.parijsback:hover {
     left: 0;
     transform: translateX(50%) translateY(50%);
 }
 
-section.opdracht3 {
-    max-width: 500px;
-    position: relative;   
+.inside1 {
+    width: 800px;
+}
+
+.inside1 img {
+    padding: 10px 0px 10px 0px; 
 }
 
 
+.opdracht3 {
+    position: relative;
+    background-color: white;
+}
+
+section.opdracht3 {
+    background-color: white;
+    max-width: 500px; 
+    padding: 0px 0px 550px 0px;
+}
+
+.covermanual img {
+    float: left;
+    position: absolute;
+    margin: 0 auto;
+}
+
+.backmanual img {
+    float: right;
+    transition: left 1s;
+    z-index: -1;
+}
+
+.backmanual:hover {
+    left: 0;
+    transform: translateX(50%) translateY(50%);
+}
+
+.text p{
+    background-color: white;
+    font-size: 25px; 
+    font-weight: 7OO;
+    padding: 0px 0px 50px 90px;
+}
 
 @media (max-width: 1000px) {
     div.wrap {
