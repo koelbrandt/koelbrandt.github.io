@@ -61,7 +61,7 @@ footer nav a:hover {
 section.about {
     color: white;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 150px;
     max-width: 100%;
     z-index: -1;
     transition: all 1s;   
