@@ -33,14 +33,33 @@ section.hero {
 
 section.smile {
     text-align: center;
+    position: absolute;
     padding: 40px 0 100px 0;  
-    z-index: -1;
     transition: all 1s;
+    z-index; -1;
+    opacity: 100%;
 }
 
 section.smile:hover img {
-    transform: scale(.99) rotate(180deg);
+    transform: scale(.99);
+    opacity: 0;
 }
+
+section.sadface {
+    text-align: center;
+    transform: scale(0.99);
+    padding: 35px 35px 100px 0px;
+    opacity: 0;
+    transition: all 1s;
+}
+
+section.sadface:hover img {
+    transform: scale(.94);
+    opacity: 100;
+    visibility: visible;
+}
+
+
 
 footer nav a {
     font-size: 30px;
@@ -55,9 +74,24 @@ footer nav a {
 }
 
 footer nav a:hover {
-    border-bottom: 5px solid pink;
+    border-bottom: 5px solid orangered;
 }
 
+header nav a {
+    text-align: left;
+    padding: 20px 20px 10px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: orangered;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: opacity 0 .5s;
+    display: inline-block;
+}
+
+header nav a:hover {
+    border-bottom: 4px solid orangered;
+}
 section.about {
     color: white;
     font-weight: 700;
