@@ -41,6 +41,7 @@ section.hero {
 
 .mondje {
     position: relative;
+    z-index: 1;
     width: 45%;
     display: inline-block;
     margin: 0 auto;
